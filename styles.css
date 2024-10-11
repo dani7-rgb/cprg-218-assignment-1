@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-container {
+    background-color: #120323;
+    color: #97bf04;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.header-container img {
+    margin-right: 15px;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+#container {
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #d9043d;
+}
+
+figcaption {
+    margin-top: 10px;
+    text-align: left;
+    padding: 15px;
+}
+
+aside {
+    background-color: #97bf04;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #d9043d;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 767px) {
+    .header-container h1 {
+        font-size: 1.8em;
+    }
+
+    figure img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .header-container img {
+        max-width: 50px;
+    }
+
+    .header-container h1 {
+        font-size: 2em;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    figcaption {
+        flex: 1;
+        text-align: left;
+    }
+
+    figure img {
+        max-width: 300px;
+        margin: 0;
+        border: 5px solid #d9043d;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        flex: 3;
+        padding-right: 20px;
+    }
+
+    aside {
+        flex: 1;
+        margin-left: 20px;
+        order: 3;
+    }
+
+    figure {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    figure img {
+        width: 300px;
+        margin-right: 20px;
+        border: 5px solid #d9043d;
+    }
+
+    figcaption {
+        flex: 1;
+        text-align: left;
+    }
+}
